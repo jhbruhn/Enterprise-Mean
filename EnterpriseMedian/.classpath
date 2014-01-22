@@ -4,5 +4,9 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
 	<classpathentry kind="lib" path="libs/swt_w64.jar"/>
 	<classpathentry kind="lib" path="libs/swt_w32.jar"/>
+	<classpathentry kind="lib" path="libs/swt_l32.jar"/>
+	<classpathentry kind="lib" path="libs/swt_l64.jar"/>
+	<classpathentry kind="lib" path="libs/swt_osx32.jar"/>
+	<classpathentry kind="lib" path="libs/swt_osx64.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
