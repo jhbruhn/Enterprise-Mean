@@ -1,5 +1,6 @@
 package de.jhbruhn.median.gui.swt;
 
+import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 
@@ -13,9 +14,12 @@ public class SWTWindow implements GUIWindow {
 	private Display display;
 	private Shell shell;
 
-	protected SWTWindow() {
+	public SWTWindow(boolean res) {
 		display = new Display();
-		shell = new Shell(display);
+		if (!res)
+			shell = new Shell(display, SWT.CLOSE | SWT.TITLE | SWT.MIN);
+		else
+			shell = new Shell(display);
 	}
 
 	@Override
@@ -53,5 +57,4 @@ public class SWTWindow implements GUIWindow {
 	public void setTitle(String title) {
 		this.shell.setText(title);
 	}
-
 }
