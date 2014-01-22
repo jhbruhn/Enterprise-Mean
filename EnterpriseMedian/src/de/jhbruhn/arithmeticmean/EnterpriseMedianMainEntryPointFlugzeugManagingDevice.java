@@ -31,7 +31,7 @@ public class EnterpriseMedianMainEntryPointFlugzeugManagingDevice implements
 		this.window = GUIWindowFactory.createFactory().createGuiWindow(false);
 		
 		this.window.setSize(280, 200);
-		this.window.setTitle("Enterprise Median");
+		this.window.setTitle("Enterprise Mean");
 		
 		this.window.addLabel("Enter your numbers here, seperated by commas:",
 				10, 10, 0, 0);
@@ -66,7 +66,7 @@ public class EnterpriseMedianMainEntryPointFlugzeugManagingDevice implements
 					.<Double> getFactory().createMedianCalculator();
 
 			Result<Double> result = calculator.calculate(i);
-			this.resultLabel.setText("Nice! The Median of those values is "
+			this.resultLabel.setText("Nice! The mean of those values is "
 					+ (Math.round(result.doubleValue() * 100d) / 100d) + ".");
 		} catch (Exception e) {
 			this.resultLabel.setText("Those values were invalid!");
